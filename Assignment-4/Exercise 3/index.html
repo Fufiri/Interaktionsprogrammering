@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 4 Exercise 3</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tablesorter-master\dist\css\theme.grey.min.css">
+
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="tablesorter-master\dist\js\jquery.tablesorter.js"></script>
+
+  
+</head>
+<body>
+
+  <div id = "container">
+
+  <div id = "droppable-div">
+  <div class="droppable ui-widget-header inactiveLink">  
+    <a href="" src="" data-fancybox class="fancyboxLink">
+      <img class="myImage" src="" />
+    </a>
+  </div>
+   
+  <div class="droppable ui-widget-header inactiveLink">
+    <a href="" src="" data-fancybox class="fancyboxLink">
+      <img class="myImage" src="" />
+    </a>
+    </div>
+   
+    <div class="droppable ui-widget-header inactiveLink">
+      <a href="" src="" data-fancybox class="fancyboxLink">
+        <img class="myImage" src="" />
+      </a>
+    </div>
+    <button> Reset </button>
+  </div>
+
+
+<div class="table-container">
+  <table id = "myTable" class="tablesorter">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Last shipment</th>
+      <th>In stock</th>
+      <th>Picture</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Fish</td>
+      <td>1</td>
+      <td>2013-11-16</td>
+      <td>100</td>
+      <td><div class="draggable ui-widget-content" src = "images/image1-small.jpg">
+        <img src = "images/image1-small.jpg"/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>Corn</td>
+      <td>2</td>
+      <td>2013-11-16</td>
+      <td>40</td>
+      <td><div class="draggable ui-widget-content" src = "images/image2-small.jpg" > 
+         <img  src = "images/image2-small.jpg"/>
+        </div></td>
+    </tr>
+    <tr>
+      <td>Watermelon</td>
+      <td>3</td>
+      <td>2013-11-16</td>
+      <td>54</td>
+      <td><div class="draggable ui-widget-content"  src = "images/image3-small.jpg">
+        <img src = "images/image3-small.jpg"/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>Egg</td>
+      <td>4</td>
+      <td>2013-11-16</td>
+      <td>32</td>
+      <td><div class="draggable ui-widget-content"  src = "images/image4-small.jpg">
+          <img src = "images/image4-small.jpg"/>
+        </div></td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+</div>
+</div>
+ 

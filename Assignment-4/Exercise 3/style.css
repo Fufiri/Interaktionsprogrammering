@@ -1,0 +1,65 @@
+#container {
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.draggable { 
+    width: 70px;
+    height: 70px; 
+    padding: 0.1em; 
+    float: left;    
+    margin-left: 3px;
+}
+.droppable { 
+    width: 130px; 
+    height: 130px; 
+    padding: 0.1em; 
+    float: left; 
+    margin: 10px; }
+
+
+#droppable-div {
+    margin-bottom: 40px;
+}
+
+.ui-widget-content img {
+    width: 70px;
+    height: 70px;
+}
+
+.table-container {
+width: 600px;
+height: 500px;
+}
+
+#myTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%; 
+  }
+  
+#myTable  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+  }
+  
+ #myTable tr:nth-child(even) {
+    background-color: #c4bdbd;
+  }
+
+  .myImage {
+     width: 100%;
+     height: 100%;
+  }
+
+  .inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+
+ .droppable a[href='']{
+    display:none;
+}
