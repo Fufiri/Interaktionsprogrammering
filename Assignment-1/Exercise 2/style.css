@@ -1,0 +1,120 @@
+body {
+    background-image: url("images/greyzz.png");
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header {
+    background-image: url("images/header.jpeg");
+    background-size: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+}
+
+#header h1 {
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    top: 60%;
+    width: 90%;
+}
+
+.post-title{
+    color: black;
+    font-size: 20px;
+    margin-top: 0;   
+}
+
+#posts {
+    background-color: white;
+    margin: auto;
+    width: 70%;
+    position: relative;
+    padding-top: 10px; 
+    padding-bottom: 5px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.image-post {
+    filter: drop-shadow(0 0rem 0.1rem black);
+    background-color:white;
+    border-radius: 10px;
+    max-width: 60%;
+    max-height: 100%;
+    margin: auto;
+    padding: 10px;  
+}
+
+#post1 {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+#post2 {
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+    
+    
+}
+
+.post-description {
+    max-width: 100%;
+}
+
+
+p {
+    font-family: serif;
+    font-size: 12px;
+}
+
+.post-title {
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+
+    
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+
+}
