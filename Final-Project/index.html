@@ -1,0 +1,413 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Implementation project </title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet"
+        href="Number-Input-Spinner-jQuery-Nice-Number/Number-Input-Spinner-jQuery-Nice-Number/src/jquery.nice-number.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Flurry-master/Flurry-master/jquery.flurry.js"></script>
+    <script src="Flurry-master/Flurry-master/jquery.flurry.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script
+        src="Number-Input-Spinner-jQuery-Nice-Number/Number-Input-Spinner-jQuery-Nice-Number/src/jquery.nice-number.js">
+    </script>
+    <script src="script.js"> </script>
+</head>
+
+<body>
+
+
+
+    <div id="header">
+        <h2>B3</h2>
+        <h2 id="homeIcon">Home</h2>
+        <div id="cart">
+            <img src="images/shopping-cart.png" id="cartIcon">
+            <p id="numberCart"></p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+
+        <div id="mainPage">
+            <ul class="lightrope">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="slideshow-container-wrap">
+                <div class="slideshow-container">
+                    <div class="slider-item"><img src="images\pexels-gary-spears-250177.jpg" /></div>
+                    <div class="slider-item"><img src="images\pexels-nicole-michalou-5779177.jpg" /></div>
+                </div>
+
+                <div class="slideshow-nav-container">
+                    <button></button>
+                    <button></button>
+                </div>
+
+                <button class="autoplayButton"></button>
+
+            </div>
+
+            <div id="newProducts">
+                <div class="break"></div>
+                <h1>New products:</h1>
+                <div class="break"></div>
+
+
+                <div class="product" data-value="200">
+                    <button class="nP-label">new</button>
+                    <p class="pName">Snowy bottle</p>
+                    <p class="price">200 kr</p>
+                    <div class="nProduct-label-bg"></div>
+                    <img class="nProduct-img" src="images\product9.jpg" />
+                </div>
+
+                <div class="product" data-value="200">
+                    <button class="nP-label">new</button>
+                    <p class="pName">Tree bauble</p>
+                    <p class="price">200 kr</p>
+                    <div class="nProduct-label-bg"></div>
+                    <img class="nProduct-img" src="images\product0.jpg" />
+                </div>
+
+                <div class="product" data-value="1200">
+                    <button class="nP-label">new</button>
+                    <p class="pName">Light up sitting area</p>
+                    <p class="price">1200 kr</p>
+                    <div class="nProduct-label-bg"></div>
+                    <img class="nProduct-img" src="images\product11.jpg" />
+                </div>
+            </div>
+
+            <hr>
+            <div class="break"></div>
+
+            <div id="products-wrapper">
+
+                <div id="sorting">
+                    <label for="sortFunction">Sort by:</label>
+                    <select name="sortFunction" id="sortFunction">
+                        <option value="default">Default</option>
+                        <option value="name">Name</option>
+                        <option value="low-to-high">Price (Low to high)</option>
+                        <option value="high-to-low">Price (High to low)</option>
+                    </select>
+                </div>
+
+                <div class="break"></div>
+
+                <div class="products-sort">
+
+                    <div class="product" data-value="250" data-name="golden-horse" data-default="1">
+                        <div class="product-img-container">
+                            <img src="images\product1.jpg">
+                        </div>
+                        <p class="pName">Golden horse</p>
+                        <p class="price">250 kr</p>
+                    </div>
+
+                    <div class="product" data-value="200" data-name="facemask" data-default="2">
+                        <div class="product-img-container">
+                            <img src="images\product2-first.jpg" onmouseover="this.src='images/product2-second.jpg'"
+                                onmouseout="this.src='images/product2-first.jpg'" /> />
+                        </div>
+                        <p class="pName">Facemask</p>
+                        <p class="price">200 kr</p>
+                    </div>
+
+                    <div class="product" data-value="100" data-name="set-of-baubles" data-default="3">
+                        <div class="product-img-container">
+                            <img src="images\product3-first.jpg" onmouseover="this.src='images/product3-second.jpg'"
+                                onmouseout="this.src='images/product3-first.jpg'" /> />
+                        </div>
+                        <p class="pName">Set of baubles</p>
+                        <p class="price">100 kr</p>
+                    </div>
+
+                    <div class="product" data-value="30" data-name="stringlights" data-default="4">
+                        <div class="product-img-container">
+                            <img src="images\product4-first.jpg" onmouseover="this.src='images/product4-second.jpg'"
+                                onmouseout="this.src='images/product4-first.jpg'" /> />
+                        </div>
+                        <p class="pName">Stringlights</p>
+                        <p class="price">30 kr</p>
+                    </div>
+
+                    <div class="product" data-value="10" data-name="red-matte" data-default="5">
+                        <div class="product-img-container">
+                            <img src="images\product5-first.jpg" onmouseover="this.src='images/product5-second.jpg'"
+                                onmouseout="this.src='images/product5-first.jpg'" />/>
+                        </div>
+                        <p class="pName">Red matte bauble</p>
+                        <p class="price">10 kr</p>
+                    </div>
+
+                    <div class="product" data-value="45" data-name="small-santa" data-default="6">
+                        <div class="product-img-container">
+                            <img src="images\product6.jpg" />
+                        </div>
+                        <p class="pName">Small santa</p>
+                        <p class="price">45 kr</p>
+                    </div>
+
+                    <div class="product" data-value="100" data-name="merry-white" data-default="7">
+                        <div class="product-img-container">
+                            <img src="images\product7-first.jpg" onmouseover="this.src='images/product7-second.jpg'"
+                                onmouseout="this.src='images/product7-first.jpg'" /> />
+                        </div>
+                        <p class="pName">Merry xmas bauble</p>
+                        <p class="price">100 kr</p>
+                    </div>
+
+                    <div class="product" data-value="50" data-name="red-with-bow" data-default="8">
+                        <div class="product-img-container">
+                            <img src="images\product8.jpg" />
+                        </div>
+                        <p class="pName">Red bauble with bow</p>
+                        <p class="price">50 kr</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="itemPage">
+
+            <div id="container">
+                <ul class="lightrope">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id="left">
+
+                    <div class="post-container">
+
+                        <div class="posts" id="one">
+                            <img src="" class="postImg">
+                        </div>
+
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnails" onclick="thumbFunction()">
+                            <img src="" class="thumbnailImg" id="thumb-img1">
+                        </div>
+
+                        <div class="thumbnails" onclick="thumbFunction()">
+                            <img src="" class="thumbnailImg" id="thumb-img2">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div id="right">
+
+                    <div class="productDescription">
+                        <h2>Christmas candle</h2>
+                        <p>Bring some real vintage charm to your festive decor and set up this Snowing Christmas TV.
+                           An old-fashioned TV shows an idyllic and cheerful Christmas scene; a family of carol singers 
+                           stands outside their snow-covered house singing to Santa, who stands in front of 
+                           a large tree beautifully decorated. </p>
+
+
+                        <p2>$450 </p2>
+                        <button class="buyButton"> Add to cart </button>
+                    </div>
+
+                    <div class="productOverview">
+                        <h2>Product Overview</h2>
+                        <p>Height: 51cm.
+                          Width: 38cm.
+                          Depth: 19.5cm.
+                          Weight: 2.5kg.
+                          Material: Plastic, Polyresin.
+                          Cable Length: 1.8cm.
+                          Wattage: 6W. </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="shoppingCart">
+            <ul class="lightrope">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <div id="productInfo">
+                <p> Free shipping and free returns </p>
+                <h2 id="cartHeader">No items in your bag</h2>
+
+            </div>
+
+
+            <div id="checkoutInfo">
+                <p>Bag subtotal: </p>
+                <p id="subPrice">$0</p>
+                <p>Free shipping: </p>
+                <p>0 kr</p>
+                <div id="cartPrize">
+                    <h2>Total</h2>
+                    <h2 id="totalPrice">0 kr</h2>
+                </div>
+                <button id="checkout">Checkout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div id="flurry-container">
+            <h2>B3</h2>
+            <p>Christmas at its finest</p>
+        </div>
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
